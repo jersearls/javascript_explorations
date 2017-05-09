@@ -1,3 +1,7 @@
-var greeting = "I'm so glad to be learning a new language, and sharing it dynamically!";
+function welcome() {
 
-console.log(greeting);
+  var greeting = "I'm so glad to be learning a new language, and sharing it dynamically!";
+  $("#main").append( greeting );
+}
+
+welcome();
