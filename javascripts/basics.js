@@ -10,7 +10,7 @@ user_name = prompt("What's your name?");
 
 // use string interpolation with prompt variable
 function address(name){
-  $("#main").append("Hi " + name + "! it's really nice to meet you. " );
+  $("#main").append("Hi " + name + "! It's really nice to meet you. " );
 }
 
 //function to capitalize user_name
