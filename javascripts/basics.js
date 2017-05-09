@@ -13,6 +13,11 @@ function address(name){
   $("#main").append("Hi " + name + "! it's really nice to meet you. " );
 }
 
+//function to capitalize user_name
+function capitalize(string) {
+    return string[0].toUpperCase() + string.slice(1);
+}
+
 // call address function with user_name as an argument
-address(user_name);
+address( capitalize(user_name) );
 welcome();
