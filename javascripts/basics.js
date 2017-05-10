@@ -8,7 +8,7 @@ function welcome() {
 // use prompt method
 user_name = prompt("What's your name?");
 
-// use string interpolation with prompt variable
+// use string concatenation with prompt variable
 function address(name){
   $("#main").append("Hi " + name + "! It's really nice to meet you. " );
 }
