@@ -1,23 +1,15 @@
-// simple first function
-function welcome() {
-
-  var greeting = "I'm so glad to be learning a new language, and sharing it dynamically with you!";
-  $("#main").append( greeting );
-}
-
-// use prompt method
-user_name = prompt("What's your name?");
-
-// use string concatenation with prompt variable
+// use string concatenation with userName variable
 function address(name){
-  $("#main").append("Hi " + name + "! It's really nice to meet you. " );
+  $("h1").html(name + ' is ready to learn some JavaScript!');
 }
 
-//function to capitalize user_name
-function capitalize(string) {
-    return string[0].toUpperCase() + string.slice(1);
-}
+// gather user input
+$('#header').on('click', function (e) {
+  // send info to console
+  console.log(e.target);
+  // call address function with user_name as an argument
+  var userName = $('input[name="whoami"]').val();
+  address(_.capitalize(userName));
+})
 
-// call address function with user_name as an argument
-address( capitalize(user_name) );
-welcome();
+
